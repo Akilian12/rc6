@@ -135,6 +135,8 @@
  static const char *asn1_magma_i[] =       { "1.2.643.7.1.1.5.1", NULL };
  static const char *asn1_kuznechik_n[] =   { "kuznechik", "kuznyechik", "grasshopper", NULL };
  static const char *asn1_kuznechik_i[] =   { "1.2.643.7.1.1.5.2", NULL };
+ static const char *asn1_rc6_n[] =   { "rc6", NULL };
+ static const char *asn1_rc6_i[] =   { "1.2.643.7.1.1.5.9", NULL };
 
  static const char *asn1_ctr_magma_n[] =   { "ctr-magma", NULL };
  static const char *asn1_ctr_magma_i[] =   { "1.2.643.2.52.1.5.1.1", NULL };
@@ -142,24 +144,40 @@
                                            { "ctr-kuznechik", "ctr-kuznyechik", NULL };
  static const char *asn1_ctr_kuznechik_i[] =
                                            { "1.2.643.2.52.1.5.1.2", NULL };
+ static const char *asn1_ctr_rc6_n[] =
+                                           { "ctr-rc6", "ctr-rc6", NULL };
+ static const char *asn1_ctr_rc6_i[] =
+                                           { "1.2.643.2.52.1.5.1.9", NULL };
  static const char *asn1_ofb_magma_n[] =   { "ofb-magma", NULL };
  static const char *asn1_ofb_magma_i[] =   { "1.2.643.2.52.1.5.2.1", NULL };
  static const char *asn1_ofb_kuznechik_n[] =
                                            { "ofb-kuznechik", "ofb-kuznyechik", NULL };
  static const char *asn1_ofb_kuznechik_i[] =
                                            { "1.2.643.2.52.1.5.2.2", NULL };
+ static const char *asn1_ofb_rc6_n[] =
+                                           { "ofb-rc6", "ofb-rc6", NULL };
+ static const char *asn1_ofb_rc6_i[] =
+                                           { "1.2.643.2.52.1.5.2.9", NULL };
  static const char *asn1_cfb_magma_n[] =   { "cfb-magma", NULL };
  static const char *asn1_cfb_magma_i[] =   { "1.2.643.2.52.1.5.3.1", NULL };
  static const char *asn1_cfb_kuznechik_n[] =
                                            { "cfb-kuznechik", "cfb-kuznyechik", NULL };
  static const char *asn1_cfb_kuznechik_i[] =
                                            { "1.2.643.2.52.1.5.3.2", NULL };
+ static const char *asn1_cfb_rc6_n[] =
+                                           { "cfb-rc6", "cfb-rc6", NULL };
+ static const char *asn1_cfb_rc6_i[] =
+                                           { "1.2.643.2.52.1.5.3.9", NULL };
  static const char *asn1_cbc_magma_n[] =   { "cbc-magma", NULL };
  static const char *asn1_cbc_magma_i[] =   { "1.2.643.2.52.1.5.4.1", NULL };
  static const char *asn1_cbc_kuznechik_n[] =
                                            { "cbc-kuznechik", "cbc-kuznyechik", NULL };
  static const char *asn1_cbc_kuznechik_i[] =
                                            { "1.2.643.2.52.1.5.4.2", NULL };
+ static const char *asn1_cbc_rc6_n[] =
+                                           { "cbc-rc6", "cbc-rc6", NULL };
+ static const char *asn1_cbc_rc6_i[] =
+                                           { "1.2.643.2.52.1.5.4.9", NULL };
 
  static const char *asn1_xts_magma_n[] =   { "xts-magma", NULL };
  static const char *asn1_xts_magma_i[] =   { "1.2.643.2.52.1.5.5.1", NULL };
@@ -167,6 +185,10 @@
                                            { "xts-kuznechik", NULL };
  static const char *asn1_xts_kuznechik_i[] =
                                            { "1.2.643.2.52.1.5.5.2", NULL };
+ static const char *asn1_xts_rc6_n[] =
+                                           { "xts-rc6", NULL };
+ static const char *asn1_xts_rc6_i[] =
+                                           { "1.2.643.2.52.1.5.5.9", NULL };
 
  /*   id-gostr3412-2015-magma-ctracpkm OBJECT IDENTIFIER ::= { 1.2.643.7.1.1.5.1.1 }
       id-gostr3412-2015-kuznechik-ctracpkm OBJECT IDENTIFIER ::= { 1.2.643.7.1.1.5.2.1 } */
@@ -179,6 +201,11 @@
                                              "id-gostr3412-2015-kuznechik-ctracpkm", NULL };
  static const char *asn1_acpkm_kuznechik_i[] =
                                            { "1.2.643.7.1.1.5.2.1", NULL };
+ static const char *asn1_acpkm_rc6_n[] =
+                                           { "acpkm-rc6", "acpkm-rc6",
+                                             "id-gostr3412-2015-rc6-ctracpkm", NULL };
+ static const char *asn1_acpkm_rc6_i[] =
+                                           { "1.2.643.7.1.1.5.2.9", NULL };
 
  static const char *asn1_cmac_magma_n[] =  { "cmac-magma", NULL };
  static const char *asn1_cmac_magma_i[] =  { "1.2.643.2.52.1.7.1.1", NULL };
@@ -186,6 +213,10 @@
                                            { "cmac-kuznechik", "cmac-kuznyechik", NULL };
  static const char *asn1_cmac_kuznechik_i[] =
                                            { "1.2.643.2.52.1.7.1.2", NULL };
+ static const char *asn1_cmac_rc6_n[] =
+                                           { "cmac-rc6", "cmac-rc6", NULL };
+ static const char *asn1_cmac_rc6_i[] =
+                                           { "1.2.643.2.52.1.7.1.9", NULL };
 
  static const char *asn1_mgm_magma_n[] =   { "mgm-magma",
                                              "id-tc26-cipher-gostr3412-2015-magma-mgm", NULL };
@@ -195,6 +226,11 @@
                                              "id-tc26-cipher-gostr3412-2015-kuznyechik-mgm", NULL };
  static const char *asn1_mgm_kuznechik_i[] =
                                            { "1.2.643.7.1.1.5.2.3", NULL };
+ static const char *asn1_mgm_rc6_n[] =
+                                           { "mgm-rc6", "mgm-rc6",
+                                             "id-tc26-cipher-gostr3412-2015-rc6-mgm", NULL };
+ static const char *asn1_mgm_rc6_i[] =
+                                           { "1.2.643.7.1.1.5.2.9", NULL };
  static const char *asn1_ctr_cmac_magma_n[] =
                                            { "ctr-cmac-magma", NULL };
  static const char *asn1_ctr_cmac_magma_i[] =
@@ -203,6 +239,10 @@
                                            { "ctr-cmac-kuznechik", NULL };
  static const char *asn1_ctr_cmac_kuznechik_i[] =
                                            { "1.2.643.2.52.1.6.1.2", NULL };
+ static const char *asn1_ctr_cmac_rc6_n[] =
+                                           { "ctr-cmac-rc6", NULL };
+ static const char *asn1_ctr_cmac_rc6_i[] =
+                                           { "1.2.643.2.52.1.6.1.9", NULL };
  static const char *asn1_ctr_hmac_magma_streebog256_n[] =
                                            { "ctr-hmac-magma-streebog256", NULL };
  static const char *asn1_ctr_hmac_magma_streebog256_i[] =
@@ -219,6 +259,14 @@
                                            { "ctr-hmac-kuznechik-streebog512", NULL };
  static const char *asn1_ctr_hmac_kuznechik_streebog512_i[] =
                                            { "1.2.643.2.52.1.6.2.2.2", NULL };
+ static const char *asn1_ctr_hmac_rc6_streebog256_n[] =
+                                           { "ctr-hmac-rc6-streebog256", NULL };
+ static const char *asn1_ctr_hmac_rc6_streebog256_i[] =
+                                           { "1.2.643.2.52.1.6.2.9.1", NULL };
+ static const char *asn1_ctr_hmac_rc6_streebog512_n[] =
+                                           { "ctr-hmac-rc6-streebog512", NULL };
+ static const char *asn1_ctr_hmac_rc6_streebog512_i[] =
+                                           { "1.2.643.2.52.1.6.2.9.2", NULL };
  static const char *asn1_xtsmac_magma_n[] =
                                            { "xtsmac-magma", NULL };
  static const char *asn1_xtsmac_magma_i[] =
@@ -227,6 +275,10 @@
                                            { "xtsmac-kuznechik", "xtsmac-kuznyechik", NULL };
  static const char *asn1_xtsmac_kuznechik_i[] =
                                            { "1.2.643.2.52.1.6.3.2", NULL };
+ static const char *asn1_xtsmac_rc6_n[] =
+                                           { "xtsmac-rc6", "xtsmac-rc6", NULL };
+ static const char *asn1_xtsmac_rc6_i[] =
+                                           { "1.2.643.2.52.1.6.3.9", NULL };
 
  static const char *asn1_sign256_n[] =     { "id-tc26-signwithdigest-gost3410-12-256",
                                              "sign256", NULL };
@@ -412,6 +464,13 @@
                            ( ak_function_set_key_random_object *)ak_bckey_set_key_random, \
                       ( ak_function_set_key_from_password_object *)ak_bckey_set_key_from_password }
 
+#define ak_object_bckey_rc6 { sizeof( struct bckey ), \
+                           ( ak_function_create_object *) ak_bckey_create_rc6, \
+                           ( ak_function_destroy_object *) ak_bckey_destroy, \
+                           ( ak_function_set_key_object *)ak_bckey_set_key, \
+                           ( ak_function_set_key_random_object *)ak_bckey_set_key_random, \
+                      ( ak_function_set_key_from_password_object *)ak_bckey_set_key_from_password }
+
  #define ak_object_hmac_streebog256 { sizeof( struct hmac ), \
                            ( ak_function_create_object *) ak_hmac_create_streebog256, \
                            ( ak_function_destroy_object *) ak_hmac_destroy, \
@@ -499,6 +558,9 @@ static struct oid libakrypt_oids[] =
  { block_cipher, algorithm, asn1_kuznechik_i, asn1_kuznechik_n, NULL,
                                    { ak_object_bckey_kuznechik, ak_object_undefined, NULL, NULL }},
 
+ { block_cipher, algorithm, asn1_rc6_i, asn1_rc6_n, NULL,
+                                    { ak_object_bckey_rc6, ak_object_undefined, NULL, NULL }},
+
 /* базовые режимы блочного шифрования */
  { block_cipher, encrypt_mode, asn1_ctr_magma_i, asn1_ctr_magma_n, NULL,
   { ak_object_bckey_magma, ak_object_undefined, ( ak_function_run_object *) ak_bckey_ctr,
@@ -508,6 +570,10 @@ static struct oid libakrypt_oids[] =
   { ak_object_bckey_kuznechik, ak_object_undefined, ( ak_function_run_object *) ak_bckey_ctr,
                                                        ( ak_function_run_object *) ak_bckey_ctr }},
 
+ { block_cipher, encrypt_mode, asn1_ctr_rc6_i, asn1_ctr_rc6_n, NULL,
+   { ak_object_bckey_rc6, ak_object_undefined, ( ak_function_run_object *) ak_bckey_ctr,
+     ( ak_function_run_object *) ak_bckey_ctr }},
+
  { block_cipher, encrypt_mode, asn1_ofb_magma_i, asn1_ofb_magma_n, NULL,
   { ak_object_bckey_magma, ak_object_undefined, ( ak_function_run_object *) ak_bckey_ofb,
                                                        ( ak_function_run_object *) ak_bckey_ofb }},
@@ -515,6 +581,10 @@ static struct oid libakrypt_oids[] =
  { block_cipher, encrypt_mode, asn1_ofb_kuznechik_i, asn1_ofb_kuznechik_n, NULL,
   { ak_object_bckey_kuznechik, ak_object_undefined, ( ak_function_run_object *) ak_bckey_ofb,
                                                        ( ak_function_run_object *) ak_bckey_ofb }},
+
+ { block_cipher, encrypt_mode, asn1_ofb_rc6_i, asn1_ofb_rc6_n, NULL,
+   { ak_object_bckey_rc6, ak_object_undefined, ( ak_function_run_object *) ak_bckey_ofb,
+     ( ak_function_run_object *) ak_bckey_ofb }},
 
  { block_cipher, encrypt_mode, asn1_cfb_magma_i, asn1_cfb_magma_n, NULL,
   { ak_object_bckey_magma, ak_object_undefined, ( ak_function_run_object *) ak_bckey_encrypt_cfb,
@@ -525,6 +595,11 @@ static struct oid libakrypt_oids[] =
                                                 ( ak_function_run_object *) ak_bckey_encrypt_cfb,
                                                ( ak_function_run_object *) ak_bckey_decrypt_cfb }},
 
+ { block_cipher, encrypt_mode, asn1_cfb_rc6_i, asn1_cfb_rc6_n, NULL,
+   { ak_object_bckey_rc6, ak_object_undefined,
+     ( ak_function_run_object *) ak_bckey_encrypt_cfb,
+     ( ak_function_run_object *) ak_bckey_decrypt_cfb }},
+
  { block_cipher, encrypt_mode, asn1_cbc_magma_i, asn1_cbc_magma_n, NULL,
   { ak_object_bckey_magma, ak_object_undefined, ( ak_function_run_object *) ak_bckey_encrypt_cbc,
                                                ( ak_function_run_object *) ak_bckey_decrypt_cbc }},
@@ -533,6 +608,11 @@ static struct oid libakrypt_oids[] =
   { ak_object_bckey_kuznechik, ak_object_undefined,
                                                 ( ak_function_run_object *) ak_bckey_encrypt_cbc,
                                                ( ak_function_run_object *) ak_bckey_decrypt_cbc }},
+
+ { block_cipher, encrypt_mode, asn1_cbc_rc6_i, asn1_cbc_rc6_n, NULL,
+   { ak_object_bckey_rc6, ak_object_undefined,
+     ( ak_function_run_object *) ak_bckey_encrypt_cbc,
+     ( ak_function_run_object *) ak_bckey_decrypt_cbc }},
 
  { block_cipher, encrypt2k_mode, asn1_xts_magma_i, asn1_xts_magma_n, NULL,
   { ak_object_bckey_magma, ak_object_bckey_magma,
@@ -544,6 +624,11 @@ static struct oid libakrypt_oids[] =
                                                  ( ak_function_run_object *) ak_bckey_encrypt_xts,
                                                ( ak_function_run_object *) ak_bckey_decrypt_xts }},
 
+ { block_cipher, encrypt2k_mode, asn1_xts_rc6_i, asn1_xts_rc6_n, NULL,
+   { ak_object_bckey_rc6, ak_object_bckey_rc6,
+     ( ak_function_run_object *) ak_bckey_encrypt_xts,
+     ( ak_function_run_object *) ak_bckey_decrypt_xts }},
+
  { block_cipher, acpkm, asn1_acpkm_magma_i, asn1_acpkm_magma_n, NULL,
   { ak_object_bckey_magma, ak_object_undefined, ( ak_function_run_object *) ak_bckey_ctr_acpkm,
                                                  ( ak_function_run_object *) ak_bckey_ctr_acpkm }},
@@ -553,12 +638,21 @@ static struct oid libakrypt_oids[] =
                                                   ( ak_function_run_object *) ak_bckey_ctr_acpkm,
                                                  ( ak_function_run_object *) ak_bckey_ctr_acpkm }},
 
+ { block_cipher, acpkm, asn1_acpkm_rc6_i, asn1_acpkm_rc6_n, NULL,
+   { ak_object_bckey_rc6, ak_object_undefined,
+     ( ak_function_run_object *) ak_bckey_ctr_acpkm,
+     ( ak_function_run_object *) ak_bckey_ctr_acpkm }},
+
  { block_cipher, mac, asn1_cmac_magma_i, asn1_cmac_magma_n, NULL,
   { ak_object_bckey_magma, ak_object_undefined, ( ak_function_run_object *) ak_bckey_cmac, NULL }},
 
  { block_cipher, mac, asn1_cmac_kuznechik_i, asn1_cmac_kuznechik_n, NULL,
   { ak_object_bckey_kuznechik, ak_object_undefined,
                                                 ( ak_function_run_object *) ak_bckey_cmac, NULL }},
+
+ { block_cipher, mac, asn1_cmac_rc6_i, asn1_cmac_rc6_n, NULL,
+   { ak_object_bckey_rc6, ak_object_undefined,
+     ( ak_function_run_object *) ak_bckey_cmac, NULL }},
 
 /* расширенные режимы блочного шифрования */
  { block_cipher, aead, asn1_mgm_magma_i, asn1_mgm_magma_n, NULL,
@@ -571,6 +665,11 @@ static struct oid libakrypt_oids[] =
                                                ( ak_function_run_object *) ak_bckey_encrypt_mgm,
                                                ( ak_function_run_object *) ak_bckey_decrypt_mgm }},
 
+ { block_cipher, aead, asn1_mgm_rc6_i, asn1_mgm_rc6_n, NULL,
+   { ak_object_bckey_rc6, ak_object_bckey_rc6,
+     ( ak_function_run_object *) ak_bckey_encrypt_mgm,
+     ( ak_function_run_object *) ak_bckey_decrypt_mgm }},
+
  { block_cipher, aead, asn1_ctr_cmac_magma_i, asn1_ctr_cmac_magma_n, NULL,
   { ak_object_bckey_magma, ak_object_bckey_magma,
                                           ( ak_function_run_object *) ak_bckey_encrypt_ctr_cmac,
@@ -580,6 +679,11 @@ static struct oid libakrypt_oids[] =
   { ak_object_bckey_kuznechik, ak_object_bckey_kuznechik,
                                           ( ak_function_run_object *) ak_bckey_encrypt_ctr_cmac,
                                           ( ak_function_run_object *) ak_bckey_decrypt_ctr_cmac }},
+
+ { block_cipher, aead, asn1_ctr_cmac_rc6_i, asn1_ctr_cmac_rc6_n, NULL,
+   { ak_object_bckey_rc6, ak_object_bckey_rc6,
+     ( ak_function_run_object *) ak_bckey_encrypt_ctr_cmac,
+     ( ak_function_run_object *) ak_bckey_decrypt_ctr_cmac }},
 
  { block_cipher, aead, asn1_ctr_hmac_magma_streebog256_i, asn1_ctr_hmac_magma_streebog256_n, NULL,
   { ak_object_bckey_magma, ak_object_hmac_streebog256,
@@ -603,6 +707,18 @@ static struct oid libakrypt_oids[] =
                                           ( ak_function_run_object *) ak_bckey_encrypt_ctr_hmac,
                                           ( ak_function_run_object *) ak_bckey_decrypt_ctr_hmac }},
 
+ { block_cipher, aead,
+   asn1_ctr_hmac_rc6_streebog256_i, asn1_ctr_hmac_rc6_streebog256_n, NULL,
+   { ak_object_bckey_rc6, ak_object_hmac_streebog256,
+     ( ak_function_run_object *) ak_bckey_encrypt_ctr_hmac,
+     ( ak_function_run_object *) ak_bckey_decrypt_ctr_hmac }},
+
+ { block_cipher, aead,
+   asn1_ctr_hmac_rc6_streebog512_i, asn1_ctr_hmac_rc6_streebog512_n, NULL,
+   { ak_object_bckey_rc6, ak_object_hmac_streebog512,
+     ( ak_function_run_object *) ak_bckey_encrypt_ctr_hmac,
+     ( ak_function_run_object *) ak_bckey_decrypt_ctr_hmac }},
+
  { block_cipher, aead, asn1_xtsmac_magma_i, asn1_xtsmac_magma_n, NULL,
   { ak_object_bckey_magma, ak_object_bckey_magma,
                                             ( ak_function_run_object *) ak_bckey_encrypt_xtsmac,
@@ -612,6 +728,11 @@ static struct oid libakrypt_oids[] =
   { ak_object_bckey_kuznechik, ak_object_bckey_kuznechik,
                                             ( ak_function_run_object *) ak_bckey_encrypt_xtsmac,
                                             ( ak_function_run_object *) ak_bckey_decrypt_xtsmac }},
+
+ { block_cipher, aead, asn1_xtsmac_rc6_i, asn1_xtsmac_rc6_n, NULL,
+   { ak_object_bckey_rc6, ak_object_bckey_rc6,
+     ( ak_function_run_object *) ak_bckey_encrypt_xtsmac,
+     ( ak_function_run_object *) ak_bckey_decrypt_xtsmac }},
 
  { sign_function, algorithm, asn1_sign256_i, asn1_sign256_n, NULL,
   { ak_object_signkey256, ak_object_undefined,
